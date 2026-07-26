@@ -1,0 +1,28 @@
+{
+  "name": "queuectl",
+  "version": "1.0.0",
+  "description": "CLI background job queue system with exponential backoff, DLQ, and crash recovery",
+  "main": "src/cli.js",
+  "bin": {
+    "queuectl": "./bin/queuectl.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node bin/queuectl.js",
+    "test": "node test/test_queuectl.js"
+  },
+  "keywords": [
+    "job-queue",
+    "cli",
+    "background-jobs",
+    "dlq",
+    "backoff",
+    "worker"
+  ],
+  "author": "Balaji Rapolu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
